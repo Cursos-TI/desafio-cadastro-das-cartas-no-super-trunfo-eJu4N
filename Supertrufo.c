@@ -49,19 +49,17 @@ int main() {
     nome_da_cidade1[strcspn(nome_da_cidade1, "\n")] = '\0';
 
     printf("Digite a populacao: ");
-    scanf("%d", &populacao1);
+    scanf(" %d", &populacao1);
 
-    int z;
-    while ((z = getchar()) != '\n' && z != EOF);
 
     printf("Digite a area em km²: ");
-    scanf("%f", &area_km1);
+    scanf(" %f", &area_km1);
 
     printf("Digite o PIB da cidade: ");
-    scanf("%f", &pib1);
+    scanf(" %f", &pib1);
 
     printf("Digite a quantidade de pontos turisticos da cidade: ");
-    scanf("%d", &numero_pontos_turisticos1);
+    scanf(" %d", &numero_pontos_turisticos1);
 
     //Cadastro carta 2:
 
@@ -85,19 +83,19 @@ int main() {
     nome_da_cidade2[strcspn(nome_da_cidade2, "\n")] = '\0';
 
     printf("Digite a populacao: ");
-    scanf("%d", &populacao2);
+    scanf(" %d", &populacao2);
 
     int e;
     while ((e = getchar()) != '\n' && e != EOF);
 
     printf("Digite a area em km²: ");
-    scanf("%f", &area_km2);
+    scanf(" %f", &area_km2);
 
     printf("Digite o PIB da cidade: ");
-    scanf("%f", &pib2);
+    scanf(" %f", &pib2);
 
     printf("Digite a quantidade de pontos turisticos da cidade: ");
-    scanf("%d", &numero_pontos_turisticos2);
+    scanf(" %d", &numero_pontos_turisticos2);
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
