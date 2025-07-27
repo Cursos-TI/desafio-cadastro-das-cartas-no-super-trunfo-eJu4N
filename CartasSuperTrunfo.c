@@ -12,7 +12,7 @@ int main() {
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
     // Declaracoes carta 1:
-    char estado1[30];
+    char estado1;
     char codigo_carta1[10];
     char nome_da_cidade1[50];
     int populacao1;
@@ -21,7 +21,7 @@ int main() {
     float pib1;
     
     // Declaracoes carta 2:
-    char estado2[30];
+    char estado2;
     char codigo_carta2[10];
     char nome_da_cidade2[50];
     int populacao2;
@@ -36,7 +36,7 @@ int main() {
     //Cadastro carta 1:
     printf("Carta 1: \n");
     printf("Digite uma letra(A-H): ");
-    scanf("%s", &estado1);
+    scanf(" %c", &estado1);
 
     printf("Digite o codigo da carta(01-04): ");
     scanf(" %s", codigo_carta1);
@@ -52,6 +52,9 @@ int main() {
     printf("Digite a populacao: ");
     scanf("%d", &populacao1);
 
+    int z;
+    while ((z = getchar()) != '\n' && z != EOF);
+
     printf("Digite a area em km²: ");
     scanf("%f", &area_km1);
 
@@ -63,19 +66,30 @@ int main() {
 
     //Cadastro carta 2:
 
+    int d;
+    while ((d = getchar()) != '\n' && d != EOF);
+
     printf("Carta 2: \n");
     printf("Digite uma letra(A-H): ");
-    scanf("%s", &estado2);
+    scanf(" %c", &estado2);
+
+    
 
     printf("Digite o codigo da carta(01-04): ");
     scanf(" %s", codigo_carta2);
 
+    int y;
+    while ((y = getchar()) != '\n' && y != EOF);
+    
     printf("Digite o nome da cidade: ");
     fgets(nome_da_cidade2, sizeof(nome_da_cidade2), stdin);
     nome_da_cidade2[strcspn(nome_da_cidade2, "\n")] = '\0';
 
     printf("Digite a populacao: ");
     scanf("%d", &populacao2);
+
+    int e;
+    while ((e = getchar()) != '\n' && e != EOF);
 
     printf("Digite a area em km²: ");
     scanf("%f", &area_km2);
@@ -89,7 +103,7 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-
+    printf("\n");
     printf("Carta 1: \n");
     printf("\n");
 
@@ -101,7 +115,7 @@ int main() {
     printf("PIB: %.2f bilhões de reais \n", pib1);
     printf("Número de Pontos Turísticos: %d \n", numero_pontos_turisticos1);
 
-
+    printf("\n");
     printf("Carta 2: \n");
     printf("\n");
 
