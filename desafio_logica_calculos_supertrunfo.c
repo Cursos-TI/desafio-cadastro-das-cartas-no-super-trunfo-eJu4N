@@ -104,8 +104,11 @@ int main() {
     float pib_per_capita1;
     float pib_per_capita2;
 
-    pib_per_capita1 = pib1 * 1000000000 / populacao1;
-    pib_per_capita2 = pib2 * 1000000000 / populacao2;
+    //Fiz o pib multiplicado por bilhao parea resolver problema de estar fazendo as contas
+    //Com numeros curtos. com numero curtos sempre dava zero como resultado.
+
+    pib_per_capita1 = pib1 * 1000000000 / populacao1; 
+    pib_per_capita2 = pib2 * 1000000000 / populacao2;  
 
     //Exibicao das cartas
     printf("\n");
